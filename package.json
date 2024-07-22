@@ -1,0 +1,40 @@
+{
+  "name": "update-etag-webpack-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.umd.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rollup -c build/rollup.config.mjs",
+    "patch": "npm version patch && git push origin --tags"
+  },
+  "keywords": [
+    "highlight"
+  ],
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jeamd/keyword-highlight.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Jeamd/keyword-highlight/issues"
+  },
+  "homepage": "https://github.com/Jeamd/keyword-highlight",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@types/lodash": "^4.17.7",
+    "rollup": "^2.79.1",
+    "rollup-plugin-progress": "^1.1.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.5",
+    "webpack": "^5.93.0"
+  }
+}

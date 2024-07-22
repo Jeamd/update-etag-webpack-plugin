@@ -9,19 +9,21 @@
     "patch": "npm version patch && git push origin --tags"
   },
   "keywords": [
-    "highlight"
+    "webpack plugin",
+    "update tag",
+    "Resolve browser caching issues"
   ],
   "files": [
     "dist"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Jeamd/keyword-highlight.git"
+    "url": "git+https://github.com/Jeamd/update-etag-webpack-plugin.git"
   },
   "bugs": {
-    "url": "https://github.com/Jeamd/keyword-highlight/issues"
+    "url": "https://github.com/Jeamd/update-etag-webpack-plugin/issues"
   },
-  "homepage": "https://github.com/Jeamd/keyword-highlight",
+  "homepage": "https://github.com/Jeamd/update-etag-webpack-plugin",
   "author": "",
   "license": "ISC",
   "devDependencies": {

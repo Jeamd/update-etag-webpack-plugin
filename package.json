@@ -2,7 +2,7 @@
   "name": "update-etag-webpack-plugin",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.umd.js",
+  "main": "dist/index.cjs.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "rollup -c build/rollup.config.mjs",

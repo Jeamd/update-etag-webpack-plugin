@@ -29,11 +29,11 @@ class UpdateEtag {
         try {
           const options = Object.assign({}, this.options)
           const fileName = `${options.name || defaultFileName}.json`
-          const latest_release_at = new Date().getTime().toString;
+          const timer = new Date().getTime().toString();
           const random_id = Math.random().toString().slice(-5);
           const fileContent = JSON.stringify({
             data: {
-              latest_release_at: `${latest_release_at}_${random_id}`,
+              latest_release_at: `${timer}_${random_id}`,
             },
           });
 

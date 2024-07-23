@@ -24,5 +24,31 @@
 webpack.config.js
 
 ```
+  const UpdateEtagWebpackPlugin = require("update-etag-webpack-plugin");
 
+  module.exports = {
+      mode: 'production',
+      entry:'./src/index.js',
+      output: {
+          filename: 'index.js',
+          path: path.resolve(__dirname, 'dist')
+      },
+      plugins: [
+          new UpdateEtagWebpackPlugin({ name: "release_time" }),
+      ]
+  }
+```
+
+index.js
+
+```
+  fetch('/release_time.json').then((data)=>{
+    const { latest_release_at } = data || {};
+
+    const local_latest_release_at = localStorage.getItem('latest_release_at');
+    if(latest_release_at !== local_latest_release_at) {
+      // do update
+      update()
+    }
+  });
 ```
